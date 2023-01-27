@@ -25,7 +25,7 @@ int main()
 	cout
 		<< "\n";
 	cout
-		<< "El producto de sus numeros es: ";
+		<< "El producto de sus numeros es: " ;
 	cout
 		<< producto;
 	return 0;
