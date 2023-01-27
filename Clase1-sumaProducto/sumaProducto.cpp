@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int num1, num2, suma, producto;
+int num1, num2, num3, num4, suma, producto;
 
 int main()
 {
@@ -16,14 +16,26 @@ int main()
 		>> num2;
 	
 	suma = num1 + num2;
-	producto = num1 * num2;
-
+	
 	cout
 		<< "La suma de sus numeros es: ";
 	cout
 		<< suma;
 	cout
 		<< "\n";
+
+	cout
+		<< "Ingrese un nuevo valor: ";
+	cin
+		>> num3;
+
+	cout
+		<< "Ingrese un valor mas: ";
+	cin
+		>> num4;
+
+	producto = num3 * num4;
+
 	cout
 		<< "El producto de sus numeros es: " ;
 	cout
