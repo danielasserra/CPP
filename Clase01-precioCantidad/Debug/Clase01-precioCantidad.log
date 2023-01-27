@@ -1,0 +1,3 @@
+﻿  PrecioCantidad.cpp
+C:\Users\Donna\Documents\Curso C++\Clase01-precioCantidad\PrecioCantidad.cpp(21,17): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Clase01-precioCantidad.vcxproj -> C:\Users\Donna\Documents\Curso C++\Clase01-precioCantidad\Debug\Clase01-precioCantidad.exe
