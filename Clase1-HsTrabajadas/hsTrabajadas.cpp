@@ -23,8 +23,10 @@ int main()
         << "\n";
 
     //Condición de pago de impuestos.
-    if (sueldo > 100000);
-    cout
-        << "Esta persona debe abonar impuestos";
+    if (sueldo > 100000)
+    {
+        cout
+            << "Esta persona debe abonar impuestos";
+    }
     return 0;
 }
