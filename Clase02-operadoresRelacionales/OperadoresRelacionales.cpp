@@ -28,7 +28,7 @@ int num6;
 
 int main()
 {
-	
+	/*
 	//Actividad 1
 	cout
 		<< "Ingrese un numero: ";
@@ -136,7 +136,7 @@ int main()
 			<< "\n";
 	}
 	
-
+	*/
 	//Actividad 4.
 	cout
 		<< "Ingrese una calificacion: ";
@@ -153,24 +153,24 @@ int main()
 
 	promedio = (nota1 + nota2 + nota3) / 4;
 
-	if (promedio >= 7 && promedio <=10)
+	if (promedio <= 7 && promedio >=10)
 	{
 		cout
 			<< "Promocionado"; 
 		cout
 			<< "\n";
 	}
-	else if (promedio <= 6 && promedio >= 1)
+	else if (promedio <= 6 && promedio >= 4)
 	{
 		cout
-			<< "Debe recuperar contenidos para aprobar";
+			<< "Regular";
 		cout
 			<< "\n";
 	}
-	else
+	else if (promedio <= 4 && promedio >=1)
 	{
 		cout
-			<< "Calificacion invalida";
+			<< "Reprobado";
 		cout
 			<< "\n";
 	}
