@@ -8,12 +8,12 @@ int perimetro;
 int main()
 {
 	cout
-		<< "Ingrese el tamaÃ±o del lado del cuadrado: ";
+		<< "Ingrese el tamaño del lado del cuadrado: ";
 	cin
 		>> lado;
 	perimetro = lado * 4;
 	cout
-		<< "El perÃ­metro del cuadrado es: ";
+		<< "El perímetro del cuadrado es: ";
 	cout
 		<< perimetro;
 	return 0;
