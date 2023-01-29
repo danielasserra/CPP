@@ -4,12 +4,12 @@ using namespace std;
 
 int main()
 {
-    //Declaración de variables
+    //DeclaraciÃ³n de variables
     int horasTrabajadas;
     float costoHora;
     float sueldo;
 
-    //El usuario ingresa datos numéricos
+    //El usuario ingresa datos numÃ©ricos
     cout << "Ingrese Horas trabajadas por el operario:";
     cin >> horasTrabajadas;
     cout << "Ingrese el pago por hora en pesos argentinos:";
@@ -22,7 +22,7 @@ int main()
     cout
         << "\n";
 
-    //Condición de pago de impuestos.
+    //CondiciÃ³n de pago de impuestos.
     if (sueldo > 100000)
     {
         cout
