@@ -201,7 +201,7 @@ int main()
 		
 
 
-		*/
+		
 
 		//Ejercicio 2
 			//Se ingresan un conjunto de n alturas de personas por teclado. Mostrar la altura promedio de las personas.
@@ -237,6 +237,222 @@ int main()
 	cout
 		<< promAlt;
 
+		
+
+	//Ejercicio 3
+	//En una empresa trabajan n empleados cuyos sueldos oscilan entre $100 y $500, realizar un programa que lea los sueldos que cobra cada empleado e informe cuántos empleados cobran entre $100 y $300 y cuántos cobran más de $300.Además el programa deberá informar el importe que gasta la empresa en sueldos al personal.
+
+	int empleados; //cant de empleados, ingresado por usuario
+	int sueldo; //ingresado por usuario
+	int mayor = 0; //indica los que cobran más de 300
+	int menor = 0; //indica los que cobran menos de 300.
+	int gasto = 0; //importe que gasta la empresa en sueldos
+	int cont = 1; //contador
+
+	cout
+		<< "Ingrese la cantidad de empleados de la empresa: ";
+	cin
+		>> empleados;
+
+	while (cont <= empleados)
+	{
+		cout
+			<< "Ingrese el salario del empleado: ";
+		cin
+			>> sueldo;
+
+		//acumulador 
+		//suma de sueldos = gasto de la empresa en sueldos
+		gasto += sueldo;
+
+		//condicional para dirimir cuántos empleados cobran más de 300 y cuántos cobran menos
+		if (sueldo < 300)
+		{
+			menor += 1;
+		}
+		else
+		{
+			mayor += 1;
+		}
+
+		cont += 1;
+		
+	}
+
+	cout
+		<< menor;
+	cout
+		<< " empleados cobran menos de 300.";
+	cout
+		<< "\n";
+	cout
+		<< mayor;
+	cout
+		<< " empleados cobran mas de 300.";
+	cout
+		<< "\n";
+	cout
+		<< "El importe que gasta la empresa en salarios al personal es de: ";
+	cout
+		<< gasto;
+
+
+		
+
+	//Ejercicio 4
+	//Realizar un programa que imprima 25 términos de la serie 11 - 22 - 33 - 44, etc. (No se ingresan valores por teclado)
+
+	int cont = 0; //contador
+	int num = 0; //acumulador
+	int aumento = 11;
+
+	while (cont < 25)
+	{
+		num = num + aumento;
+
+		cout
+			<< num;
+		cout
+			<< " - ";
+		
+		cont += 1;
+	}
+
+	
+
+	//Ejercicio 5
+	//Mostrar los múltiplos de 8 hasta el valor 500. Debe aparecer en pantalla 8 - 16 - 24, etc.
+
+	int valor = 0; // acumulador
+	int multiplo = 8; // aumenta 8 al numero anterior
+	
+
+	while (valor < 500)
+	{
+		valor += multiplo;
+
+		cout
+			<< valor;
+		cout
+			<< " - ";
+	}
+
+	
+
+	//Ejercicio 6
+	//Realizar un programa que permita cargar dos listas de 15 valores cada una. Informar con un mensaje cual de las dos listas tiene un valor acumulado mayor (mensajes "Lista 1 mayor", "Lista 2 mayor", "Listas iguales")
+	//Tener en cuenta que puede haber dos o más estructuras repetitivas en un algoritmo.
+
+	int valor; // numeros ingresados por el usuario
+	int cont = 0; //contador
+	int sumaLUno = 0; // acumulador de la lista 1
+	int sumaLDos = 0; //acumulador de la lista 2
+
+	cout
+		<< "Lista 1";
+	cout
+		<< "\n";
+
+	while (cont < 15)
+	{
+		cout
+			<< "Ingrese un valor: ";
+		cin
+			>> valor;
+
+		sumaLUno += valor;
+
+		cont += 1;
+
+	}
+
+	cout
+		<< "Lista 2";
+	cout
+		<< "\n";
+	
+	//reiniciar el contador
+	cont = 0;
+
+	while (cont < 15)
+	{
+		cout
+			<< "Ingrese un valor: ";
+		cin
+			>> valor;
+		
+		sumaLDos += valor;
+
+		cont += 1;
+
+	}
+
+	if (sumaLUno < sumaLDos)
+	{
+		cout
+			<< "Lista 2 Mayor";
+	}
+	else 
+	{
+		if (sumaLUno == sumaLDos)
+		{
+			cout
+				<< "Listas iguales";
+		}
+		else
+		{
+			cout
+				<< "Lista 1 mayor";
+		}
+	}
+
+	*/
+
+	//Ejercicio 7
+	//Desarrollar un programa que permita cargar n números enteros y luego nos informe cuántos valores fueron pares y cuántos impares.
+	//Emplear el operador “% ” en la condición de la estructura condicional(este operador retorna el resto de la división de dos valores, por ejemplo 11 % 2 retorna un 1) :
+	//if (valor % 2 == 0)         //Si el if da verdadero luego es par.
+
+	int num; //numeros a ingresar por el usuario
+	int valor; // valores ingresados por el usuario
+	int cont = 0; //contador
+	int par = 0;
+	int impar = 0;
+
+	cout
+		<< "¿Cuantos numeros ingresara? ";
+	cin
+		>> num;
+
+	while (cont < num)
+	{
+		cout
+			<< "Ingrese un valor: ";
+		cin
+			>> valor;
+
+		if (valor % 2 == 0)
+		{
+			par += 1;
+		}
+		else
+		{
+			impar += 1;
+		}
+
+		cont += 1;
+	}
+
+	cout
+		<< par;
+	cout
+		<< " numeros ingresados pares";
+	cout
+		<< "\n";
+	cout
+		<< impar;
+	cout
+		<< " numeros ingresados impares";
 
 	return 0;
 
