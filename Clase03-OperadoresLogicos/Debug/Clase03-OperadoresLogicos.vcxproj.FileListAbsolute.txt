@@ -1,1 +1,2 @@
 C:\Users\Donna\Documents\Curso C++\Clase03-OperadoresLogicos\Debug\Clase03-OperadoresLogicos.exe
+C:\Users\Donna\Documents\CPP\Clase03-OperadoresLogicos\Debug\Clase03-OperadoresLogicos.exe

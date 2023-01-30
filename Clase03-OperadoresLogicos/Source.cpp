@@ -6,9 +6,8 @@ Actividades:
 4. Se ingresan tres valores por teclado, si todos son iguales se imprime la suma del primero con el segundo y a este resultado se lo multiplica por el tercero.
 5. Se ingresan por teclado tres números, si todos los valores ingresados son menores a 10, imprimir en pantalla la leyenda "Todos los números son menores a diez".
 6. Se ingresan por teclado tres números, si al menos uno de los valores ingresados es menor a 10, imprimir en pantalla la leyenda "Alguno de los números es menor a diez".
-7. Escribir un programa que pida ingresar la coordenada de un punto en el plano, es decir dos valores enteros x e y (distintos a cero).
-8. Posteriormente imprimir en pantalla en que cuadrante se ubica dicho punto. (1º Cuadrante si x > 0 Y y > 0 , 2º Cuadrante: x < 0 Y y > 0, etc.)
-9. De un operario se conoce su sueldo y los años de antigüedad. Se pide confeccionar un programa que lea los datos de entrada e informe:
+7. Escribir un programa que pida ingresar la coordenada de un punto en el plano, es decir dos valores enteros x e y (distintos a cero). Posteriormente imprimir en pantalla en que cuadrante se ubica dicho punto. (1º Cuadrante si x > 0 Y y > 0 , 2º Cuadrante: x < 0 Y y > 0, etc.)
+8. De un operario se conoce su sueldo y los años de antigüedad. Se pide confeccionar un programa que lea los datos de entrada e informe:
 a) Si el sueldo es inferior a 500 y su antigüedad es igual o superior a 10 años, otorgarle un aumento del 20 %, mostrar el sueldo a pagar.
 b)Si el sueldo es inferior a 500 pero su antigüedad es menor a 10 años, otorgarle un aumento de 5 %.
 c) Si el sueldo es mayor o igual a 500 mostrar el sueldo en pantalla sin cambios.
@@ -19,19 +18,25 @@ c) Si el sueldo es mayor o igual a 500 mostrar el sueldo en pantalla sin cambios
 
 using namespace std;
 
-//variables actividad 1 y 4
-int num1, num2, num3;
+//variables actividad 1, 4, 5, 6 y 10
+int num1, num2, num3, num4; 
 
 //variables actividad 2 y 3
 int dia, mes, año;
+
+//variables actividad 7
+int puntoX, puntoY;
+
+//variables actividad 8
+int sueldo, antiguedad, aumento;
 
 
 
 int main()
 {
-	/*
+	
 	//Actividad 1
-	cout 
+	cout
 		<< "Ingrese primer valor: ";
 	cin
 		>> num1;
@@ -66,7 +71,7 @@ int main()
 				<< num3;
 		}
 	}
-	
+
 
 	//Actividad 2
 
@@ -95,7 +100,7 @@ int main()
 		cout
 			<< "La fecha ingresada no pertenece al primer trimestre del año ";
 	}
-	
+
 
 	//Actividad 3
 	cout
@@ -118,14 +123,14 @@ int main()
 		cout
 			<< "La fecha ingresada es Navidad";
 	}
-	else 
+	else
 	{
 		cout
 			<< "La fecha ingresada no es navidad";
 	}
-	
 
-	//Actividad 4
+
+	//Actividad 4, 5 y 6
 
 	cout
 		<< "Ingrese el primer valor: ";
@@ -140,18 +145,176 @@ int main()
 	cin
 		>> num3;
 
-	if (num1 < 10 && num2 < 10 && num3 < 10)
+	if (num1 == num2 && num2 == num3)
 	{
+		num4 = (num1 + num2) * num3;
 		cout
-			<< "Todos los numeros son menores a 10";
+			<< "Su resultado es: ";
+		cout
+			<< num4;
 	}
 	else
 	{
-		cout
-			<< "Los numeros no son menores a 10";
+		if (num1 < 10 && num2 < 10 && num3 < 10)
+		{
+			cout
+				<< "Todos los numeros son menores a 10";
+		}
+		else
+		{
+			if (num1 < 10 || num2 < 10 || num3 < 10)
+			{
+				cout
+					<< "Alguno de los numeros es menor a 10";
+			}
 	}
-	return 0;
-	*/
 
-	//Actividad 5
+	
+		
+	}	
+	/*
+	//Actividad 7
+
+	cout
+		<< "Vamos a ingresar coordenadas de un punto en el plano"
+		"\n"
+		"Ingrese coordenada X: ";
+	cin
+		>> puntoX;
+	cout
+		<< "Ingrese coordenada Y: ";
+	cin
+		>> puntoY;
+
+	if (puntoX > 0 && puntoY > 0)
+	{
+		cout
+			<< "El punto se encuentra en el primer cuadrante";
+	}
+	else
+	{
+		if (puntoX < 0 && puntoY > 0)
+		{
+			cout
+				<< "El punto se encuentraen el segundo cuadrante";
+		}
+		else
+		{
+			if (puntoX < 0 && puntoY < 0)
+			{
+				cout
+					<< "El punto se encuentra en el tercer cuadrante";
+			}
+			else
+				cout
+				<< "El punto se encuentra en el cuarto cuadrante";
+		}
+
+	}
+	
+	//Actividad 8
+
+	cout
+		<< "Ingrese su sueldo: ";
+	cin
+		>> sueldo;
+	cout
+		<< "Ingrese su antiguedad: ";
+	cin
+		>> antiguedad;
+
+	if (sueldo < 500 && antiguedad >= 10)
+	{
+		aumento = (sueldo * 0.2) + sueldo;
+
+		cout
+			<< "Recibe un aumento del 20%"
+			"\n"
+			"Su nuevo salario es: ";
+		cout
+			<< aumento;
+	}
+	else
+	{
+		if (sueldo < 500 && antiguedad < 10)
+		{
+			aumento = (sueldo * 0.05) + sueldo;
+
+			cout
+				<< "Recibe un aumento del 5%"
+				"\n"
+				"Su nuevo salario es: ";
+			cout
+				<< aumento;
+		}
+		else
+		{
+			if (sueldo >= 500)
+			{
+				cout
+					<< "Su salario actual es: ";
+				cout
+					<< sueldo;
+			}
+		}
+	}
+	
+
+	//Actividad 9
+	
+	cout
+		<< "Ingrese el primer valor: ";
+	cin
+		>> num1;
+	cout
+		<< "Ingrese el segundo valor: ";
+	cin
+		>> num2;
+	cout
+		<< "Ingrese el tercer valor: ";
+	cin
+		>> num3;
+
+	if (num1 < num2 && num1 < num3)
+	{
+		cout
+			<< num1;
+	}
+	else
+	{
+		if (num2 < num3)
+		{
+			cout
+				<< num2;
+		}
+		else
+		{
+			cout
+				<<num3;
+		}
+	}
+
+	cout
+		<< "-";
+	if (num1 > num2 && num1 > num3)
+	{
+		cout
+			<< num1;
+	} 
+	else
+	{
+		if (num2 > num3)
+		{
+			cout
+				<< num2;
+		}
+		else
+		{
+			cout
+				<< num3;
+		}
+	}
+
+
+	return 0;
 }
