@@ -1,3 +1,7 @@
 ﻿  Source.cpp
+C:\Users\Donna\Documents\CPP\Clase04-While\Source.cpp(20,12): warning C4101: 'promedio': variable local sin referencia
+C:\Users\Donna\Documents\CPP\Clase04-While\Source.cpp(14,6): warning C4101: 'c': variable local sin referencia
+C:\Users\Donna\Documents\CPP\Clase04-While\Source.cpp(11,6): warning C4101: 'x': variable local sin referencia
+C:\Users\Donna\Documents\CPP\Clase04-While\Source.cpp(20,6): warning C4101: 'suma': variable local sin referencia
 C:\Users\Donna\Documents\CPP\Clase04-While\Source.cpp(17,6): warning C4101: 'valPos': variable local sin referencia
   Clase04-While.vcxproj -> C:\Users\Donna\Documents\CPP\Clase04-While\Debug\Clase04-While.exe
